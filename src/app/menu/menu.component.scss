@@ -1,14 +1,18 @@
-nav {
-  display: flex;
-  flex-direction: row;
+@import '../variables.scss';
 
-  .left-icon {
-    width: 100px;
-    background-color: silver;
-    padding: 3px;
+nav {
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  background-color: $background-color-secondary;
+  width: 200px;
+
+  .left-side {
+
 
     .icon-logo {
-      background-color: white;
+      background-color: $background-color-secondary;
       width: 100%;
       height: 100%
     }
@@ -18,18 +22,26 @@ nav {
     flex-grow: 1;
 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     list-style: none;
+    margin: 0px;
+    padding: 0px;
 
     li {
-      margin: auto 5px;
+      margin: 0px;
+      display: block;
+
       a {
         text-decoration: none;
         padding: 8px;
-        border: 1px solid silver;
+        border: 1px solid $border-color;
+        display: block;
+        font-size: 1.1em;
+        color: $text-color;
 
         &:hover {
-          border: 1px solid #cb8b8b;
+          border: 1px solid $border-color-hover;
+          background-color: $background-color-secondary-hover;
         }
       }
     }
