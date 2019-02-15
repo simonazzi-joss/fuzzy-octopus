@@ -1,0 +1,16 @@
+<div class="background">
+  <div class="center-row" [hidden]="!showLogin">
+    <div class="header">
+      <h1>Home server</h1>
+    </div>
+    <form class="inputPanel" (onSubmit)="autenticate()" #loginForm="ngForm">
+      <input placeholder="Username" type="text" [(ngModel)]="username" name="username" />
+      <input placeholder="Password" type="password" [(ngModel)]="password" name="password" />
+      <button type="submit" class="btn-info" (click)="autenticate()">Login!</button>
+    </form>
+  </div>
+
+  <div class="center-row" [hidden]="showLogin">
+    <img src="../../assets/loader-medium.gif" />
+  </div>
+</div>

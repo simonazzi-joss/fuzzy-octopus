@@ -1,1 +1,78 @@
 /* You can add global styles to this file, and also import other style files */
+@import './app/variables.scss';
+
+.hide {
+  display: none;
+}
+
+h1, h2, h3, h4, h5 {
+  font-size: 36px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+}
+
+*, ::before, ::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+button {
+  -webkit-box-shadow: $box-shadow;
+  -moz-box-shadow: $box-shadow;
+  box-shadow: $box-shadow;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+
+  /* Default coloring */
+  background-color: $button-color-default;
+  color: $text-color;
+
+  &.btn-info {
+    background-color: $button-color-info;
+    color: $text-color-inverted;
+  }
+  &.btn-danger {
+    background-color: $button-color-danger;
+    color: $text-color-inverted;
+  }
+  &.btn-success {
+    background-color: $button-color-success;
+    color: $text-color-inverted;
+  }
+  &.btn-warning {
+    background-color: $button-color-warning;
+    color: $text-color;
+  }
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+input {
+  width: 100%;
+  display: block;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: $text-color;
+  background-color: $input-background-color;
+  border: $input-border-color;
+  font-family: inherit;
+
+  -webkit-box-shadow: $box-shadow;
+  box-shadow: $input-box-shadow;
+
+  -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}

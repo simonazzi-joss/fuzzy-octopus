@@ -1,0 +1,30 @@
+{
+  "userData": {
+
+  },
+  "menues": [
+    {
+      "text": "Home",
+      "href": "",
+      "badge": ""
+    },
+    {
+      "text": "Immagini",
+      "href": "",
+      "badge": ""
+    },
+    {
+      "text": "Video",
+      "href": "",
+      "badge": ""
+    },
+    {
+      "text": "Musica",
+      "href": "",
+      "badge": ""
+    }
+  ],
+  "loginInfo": {
+    "timestamp": 0
+  }
+}
