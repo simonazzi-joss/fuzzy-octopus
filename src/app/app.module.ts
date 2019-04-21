@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, APP_INITIALIZER } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 
@@ -8,30 +8,39 @@ import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
 import { HeaderComponent } from './header/header.component';
 import { RouterModule, Routes } from '@angular/router';
-import { LoginComponent } from './login/login.component';
+// import { ConfigService } from 'src/services/config.service';
+import { HomePageComponent } from './home-page/home-page.component';
 
 const appRoutes: Routes = [
-  {
-    path: '**',
-    component: MenuComponent,
-  }
+	{
+		path: '**',
+		component: HomePageComponent,
+	}
 ];
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    MenuComponent,
-    HeaderComponent,
-    LoginComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule,
-    FormsModule,
-    RouterModule.forRoot(appRoutes),
-  ],
-  providers: [ ],
-  bootstrap: [AppComponent]
+	declarations: [
+		AppComponent,
+		MenuComponent,
+		HeaderComponent,
+		HomePageComponent,
+	],
+	imports: [
+		BrowserModule,
+		AppRoutingModule,
+		HttpClientModule,
+		FormsModule,
+		RouterModule.forRoot(appRoutes),
+	],
+	providers: [ 
+	/*	{
+			provide: APP_INITIALIZER,
+			useFactory: (config: ConfigService) => () => config.fetchConfiguration(),
+			deps: [ConfigService],
+			multi: true
+		}
+	*/
+	],
+	bootstrap: [AppComponent]
 })
 export class AppModule { }

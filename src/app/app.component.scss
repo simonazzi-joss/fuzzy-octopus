@@ -1,9 +1,44 @@
-@import 'variables.scss';
+@import '../variables.scss';
 
 * {
   /*font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;*/
   font-family: 'Source Sans Pro', sans-serif;
   color: $text-color;
+}
+
+.login {
+  background-image: url(../assets/backgrounds/blur-background04.jpg); /* Move this into the controller, so i can change it */
+  background-size: cover;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .center-row {
+    margin: 0 auto;
+
+    .inputPanel {
+      width: 200px;
+      display: block;
+
+      button {
+        width: 100%;
+        border-radius: 0 0 15px 15px;
+        display: inline-block;
+        padding: 6px 12px;
+        margin-bottom: 0;
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 1.428571429;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        cursor: pointer;
+        background-image: none;
+        border: 1px solid transparent;
+      }
+    }
+  }
 }
 
 .page-body {
@@ -16,6 +51,15 @@
     height: 100%;
     display: flex;
     flex-direction: row;
-    background-color: $background-color-primary;
+	
+	.app-content {
+		flex-grow: 1;
+
+		background-color: $background-color-primary;
+	}
+	.app-menu,
+	.app-content {
+		height: 100%;
+	}
   }
 }

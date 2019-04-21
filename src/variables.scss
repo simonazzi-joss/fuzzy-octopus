@@ -1,8 +1,11 @@
+$header-background-color: #f7cac9;
+$navbar-background-color: #f7cac9;
+
 $background-color-primary: #deeaee;
-$background-color-primary-hover: #b1cbbb;
+$background-color-primary-border: #b1cbbb;
 
 $background-color-secondary: #f7cac9;
-$background-color-secondary-hover: #f7dcc9;
+$background-color-secondary-border: #f7dcc9;
 
 $border-color: #eea29a;
 $border-color-hover: #c94c4c;
@@ -11,13 +14,19 @@ $text-color: #000;
 $text-color-inverted: #fff;
 
 $button-color-info: #367fa9;
+$button-color-info-border: #32769e;
 $button-color-danger: red;
+$button-color-danger-border: #dd0606;
 $button-color-warning: yellow;
+$button-color-warning-border: #bdbd05;
 $button-color-success: green;
+$button-color-success-border: #037103;
 $button-color-default: #fff;
+$button-color-default-border: #FAFAFA;
 
 $input-background-color: #fff;
-$input-border-color: 1px solid #ccc;;
+$input-border-color: 1px solid #ccc;
+$input-border-color-active: 1px solid #aaa;
 
 $box-shadow: inset 0px -2px 0px 0px rgba(0, 0, 0, 0.09);
 $input-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);

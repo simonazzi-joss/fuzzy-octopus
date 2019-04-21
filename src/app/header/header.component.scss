@@ -1,9 +1,9 @@
-@import '../variables.scss';
+@import '../../variables.scss';
 
 header {
   display: flex;
   flex-direction: row;
-  background-color: $background-color-secondary;
+  background-color: $header-background-color;
   height: 40px;
 
   .logo-area {
@@ -16,8 +16,9 @@ header {
   }
 
   .notifications-area {
-    flex-grow:1;
-    text-align: center;
+    flex-grow: 1;
+	text-align: center;
+	margin-top: -20px;
   }
 
   .user-area {
@@ -43,8 +44,8 @@ header {
     }
 
     &:hover {
-      background-color: $background-color-secondary-hover;
-    }
+		opacity: 0.8;
+	}
   }
 
 }
