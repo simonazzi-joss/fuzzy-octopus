@@ -1,6 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 @import 'variables.scss';
 
+/* configure the body */
+body {
+	height:100vh;
+	padding: 0px;
+	margin: 0px;
+}
+
 .hide {
   	display: none;
 }
@@ -33,30 +40,45 @@ a, button {
 		background-color: $button-color-default;
 		border-color: $button-color-default-border;
 		color: $text-color;
+		&:hover {
+			background-color: darken($button-color-default, $button-darkening-factor);
+		}
 
 		&.btn-info {
 			background-color: $button-color-info;
 			border-color: $button-color-info-border;
 			color: $text-color-inverted;
+
+			&:hover {
+				background-color: darken($button-color-info, $button-darkening-factor);
+			}
 		}
 		&.btn-danger {
 			background-color: $button-color-danger;
 			border-color: $button-color-danger-border;
 			color: $text-color-inverted;
+
+			&:hover {
+				background-color: darken($button-color-danger, $button-darkening-factor);
+			}
 		}
 		&.btn-success {
 			background-color: $button-color-success;
 			border-color: $button-color-success-border;
 			color: $text-color-inverted;
+
+			&:hover {
+				background-color: darken($button-color-success, $button-darkening-factor);
+			}
 		}
 		&.btn-warning {
 			background-color: $button-color-warning;
 			border-color: $button-color-warning-border;
 			color: $text-color;
-		}
 
-		&:hover {
-			opacity: 0.8;
+			&:hover {
+				background-color: darken($button-color-warning, $button-darkening-factor);
+			}
 		}
 	}
 }
@@ -91,4 +113,8 @@ table {
 			}
 		}
 	}
+}
+
+.center {
+	text-align: center;
 }

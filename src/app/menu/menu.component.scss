@@ -32,13 +32,13 @@ nav {
       a {
         text-decoration: none;
         padding: 8px;
-        border: 1px solid $border-color;
+        border: 1px solid $links-border-color;
         display: block;
         font-size: 1.1em;
         color: $text-color;
 
         &:hover {
-        	border: 1px solid $border-color-hover;
+        	border: 1px solid $links-border-color-hover;
 			opacity: 0.8;
         }
       }

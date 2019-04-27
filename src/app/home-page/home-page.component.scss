@@ -13,38 +13,3 @@
 		min-width: 20%;
 	}
 }
-
-.card {
-	margin: 10px;
-	padding: 10px 5px;
-	background-color: $background-color-secondary;
-	border: 1px solid #dd0000;
-	
-	display: block;
-	float: left;
-
-	.card-header {
-		display: flex;
-		flex-direction: row;
-
-		.title {
-			margin: 5px 5px 10px 5px;
-			flex-grow: 1;
-			font-size: 20px;
-
-			text-overflow: ellipsis;
-			overflow: hidden;
-			white-space: nowrap; 
-		}
-
-		.btn-tray {
-			display: block;
-			height: 100%;
-		}
-	}
-
-	.card-body {
-		border-top: 1px solid $border-color;
-		padding: 10px 5px;
-	}
-}

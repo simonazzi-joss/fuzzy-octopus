@@ -10,6 +10,7 @@ import { HeaderComponent } from './header/header.component';
 import { RouterModule, Routes } from '@angular/router';
 // import { ConfigService } from 'src/services/config.service';
 import { HomePageComponent } from './home-page/home-page.component';
+import { Card } from './components/card/card.component';
 
 const appRoutes: Routes = [
 	{
@@ -24,6 +25,9 @@ const appRoutes: Routes = [
 		MenuComponent,
 		HeaderComponent,
 		HomePageComponent,
+
+		// componenti
+		Card
 	],
 	imports: [
 		BrowserModule,

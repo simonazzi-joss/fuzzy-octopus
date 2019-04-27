@@ -1,5 +1,5 @@
-$header-background-color: #f7cac9;
-$navbar-background-color: #f7cac9;
+$header-background-color: #3c8dbc;
+$navbar-background-color: #f9fafc;
 
 $background-color-primary: #deeaee;
 $background-color-primary-border: #b1cbbb;
@@ -7,12 +7,13 @@ $background-color-primary-border: #b1cbbb;
 $background-color-secondary: #f7cac9;
 $background-color-secondary-border: #f7dcc9;
 
-$border-color: #eea29a;
-$border-color-hover: #c94c4c;
+$links-border-color: #d3d6f6;
+$links-border-color-hover: #c94c4c;
 
 $text-color: #000;
 $text-color-inverted: #fff;
 
+$button-darkening-factor: 7%;
 $button-color-info: #367fa9;
 $button-color-info-border: #32769e;
 $button-color-danger: red;
@@ -22,7 +23,18 @@ $button-color-warning-border: #bdbd05;
 $button-color-success: green;
 $button-color-success-border: #037103;
 $button-color-default: #fff;
-$button-color-default-border: #FAFAFA;
+$button-color-default-border: #fafafa;
+
+$card-color-default-background: #fafafa;
+$card-color-default-border: rgb(198, 193, 193);
+$card-color-info-background: #367fa9;
+$card-color-info-border: #32769e;
+$card-color-danger-background: red;
+$card-color-danger-border: #dd0606;
+$card-color-warning-background: yellow;
+$card-color-warning-border: #bdbd05;
+$card-color-success-background: green;
+$card-color-success-border: #037103;
 
 $input-background-color: #fff;
 $input-border-color: 1px solid #ccc;
